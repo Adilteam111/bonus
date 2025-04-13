@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Face Authentication</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Açılacaq Modal -->
+<div id="faceModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2>Face Authentication</h2>
+    <video id="video" width="300" height="220" autoplay muted></video>
+    <canvas id="canvas" style="display:none;"></canvas>
+    <p id="scan-text">Scanning face...</p>
+  </div>
+</div>
+
+<button onclick="openModal()">Giriş (Üzlə)</button>
+
+<script src="script.js"></script>
+</body>
+</html>
